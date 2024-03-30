@@ -1,14 +1,3 @@
----
-layout:     post   				    # 使用的布局（不需要改）
-title:      Generative Modeling by Estimating Gradients of the Data Distribution
-subtitle:   NSCN
-date:       2024-3-30 				# 时间
-author:     zzb 						# 作者
-header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
-catalog: true 						# 是否归档
-tags:								#标签
-    - diffusion
----
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -20,6 +9,18 @@ tags:								#标签
         });
     </script>
 </head>
+---
+layout:     post   				    # 使用的布局（不需要改）
+title:      Generative Modeling by Estimating Gradients of the Data Distribution
+subtitle:   NSCN
+date:       2024-3-30 				# 时间
+author:     zzb 						# 作者
+header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
+catalog: true 						# 是否归档
+tags:								#标签
+    - diffusion
+---
+
 
 ## 得分匹配
 假设我们有一系列的样本点$x_1,...,x_n$,这些样本点都属于**数据分布$p_d(x)$**。这个数据分布是未知的，但是我们可以使用另一个分布$p_m(x;\theta)$来拟合真实数据分布$p_d(x)$。我们的目标就是得到一个参数$\theta$从而使$p_m(x;\theta)$最接近与$p_d(x)$。
