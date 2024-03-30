@@ -9,20 +9,10 @@ catalog: true 						# 是否归档
 tags:								#标签
     - diffusion
 ---
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
+
 
 ## 得分匹配
-假设我们有一系列的样本点$x_1,...,x_n$,这些样本点都属于**数据分布$p_d(x)$**。这个数据分布是未知的，但是我们可以使用另一个分布$p_m(x;\theta)$来拟合真实数据分布$p_d(x)$。我们的目标就是得到一个参数$\theta$从而使$p_m(x;\theta)$最接近与$p_d(x)$。
+假设我们有一系列的样本点$`x_1,...,x_n`$,这些样本点都属于**数据分布$p_d(x)$**。这个数据分布是未知的，但是我们可以使用另一个分布$p_m(x;\theta)$来拟合真实数据分布$p_d(x)$。我们的目标就是得到一个参数$\theta$从而使$p_m(x;\theta)$最接近与$p_d(x)$。
 
 理论上，这可以通过最大化$\theta$的对数最大似然来实现：
 $$\hat{\theta}_{MLE}=argmaxlog_{\theta}p_m(x;\theta)$$
