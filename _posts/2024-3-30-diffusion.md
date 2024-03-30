@@ -16,7 +16,8 @@ tags:								#标签
 
 理论上，这可以通过最大化$`\theta`$的对数最大似然来实现：
 
-$$\hat{\theta}_{MLE}=argmaxlog_{\theta}p_m(x;\theta)$$
+$$\hat{\theta}_{MLE}$$
+
 但是由于**归一化常数**很难处理，所以直接对上述公式进行优化是很难的。
 所谓归一化常数$`Z_{\theta}`$是指：
 
